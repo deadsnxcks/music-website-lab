@@ -3,75 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>MusicLab</title>
 </head>
 <body>
     <header>
-        <a href="index.html">Самые прослушиваемые песни в Spotify</a>
-        <br>
-        <a href="forms.html">Список самых прослушиваемых песен в Spotify</a>
-        <hr>
+        <div class="header-title">MUSICLAB</div>
+        <div class="wrapper">
+            <nav>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#" class="nav-item nav-item-active">Главная</a>    
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item">Новинки</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item">Тренды</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item">О нас</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <div>
-            <a href="shape-of-you.html"><img src="img/Shape_Of_You_(Official_Single_Cover)_by_Ed_Sheeran.png" alt="" width="200"></a>
-            <a><img src="img/The_Weeknd_-_Blinding_Lights.png" alt="" width="200"></a>
-            <a><img src="img/Lewis_Capaldi_-_Someone_You_Loved.png" alt="" width="200"></a>
-            <a><img src="img/The_Weeknd_-_Starboy_(single).jpg" alt="" width="200"></a>
-            <a><img src="img/Harry_Styles_-_As_It_Was.png" alt="" width="200"></a>
-        </div>
-        <hr>
-        <div>
-            <p>
-                <img src="img/The_Weeknd_-_Blinding_Lights.png" alt="" align="middle">
-                <b>"Blinding Lights" - The Weeknd </b>               
-            </p>
-            <p>
-                "Blinding Lights" - песня канадского певца и автора песен The Weeknd с его 
-                четвертого студийного альбома After Hours (2020). По данным на 16 сентебря 2025 года 
-                имеет 5.035 миллиардов стримов в Spotify. Песня была выпущена лейблами XO 
-                и Republic Records 29 ноября 2019 года в качестве второго сингла с альбома. Это трек 
-                в стилях синти-поп, электропоп, новая волна и synthwave, в тексте которого говорится о 
-                важности партнера и желании видеть его ночью. Она была написана The Weeknd, Максом Мартином, 
-                Оскаром Холтером, Белли и Дахилой, а продюсерами выступили первые трое.
-            </p>
-        </div>
-        <div>
-            <p>
-                <img src="img/Sweater_Weather_(The_Neighborhood_single_cover).jpg" alt="" align="middle">
-                <b>"Sweater Weather" - The Neighbourhood</b>               
-            </p>
-            <p>
-                "Sweater Weather" - песня американской альтернативной группы the Neighbourhood. Песня была написана 
-                участниками группы Джесси Резерфордом, Заком Абелсом и Джереми Фридманом, а продюсером выступил Джастин Пилброу. 
-                Она является ведущим синглом с их дебютного студийного альбома I Love You (2013). В июне 2013 года "Sweater Weather" 
-                достигла первого места в альтернативном чарте Billboard Airplay, продержавшись на вершине чарта одиннадцать 
-                недель подряд. Pentatonix записали кавер-версию песни для своего альбома 2018 года Christmas Is Here! 
-                с сопровождающим музыкальным клипом. В 2014 году песня также была перепета Куртом Хьюго Шнайдером, 
-                Элисон Стоунер и Максом С. В середине-конце 2020 года популярность песни резко возросла благодаря ее 
-                использованию на платформе социальных сетей TikTok. За ноябрь 2020 года песня набрала более 5 миллионов просмотров на Spotify.
-                По состоянию на 5 июля 2025 года песня занимает 6-е место по количеству просмотров на Spotify. В конце 2023 года, 
-                к 35-летию альтернативной трансляции, Billboard составил рейтинг эта песня стала 15-й по популярности в истории чарта.
-            </p>
-        </div>
-        <div>
-            <p>
-                <img src="img/Sunflower_promo.jpg" alt="" align="middle">
-                <b>"Sunflower" - Post Malone and Swae Lee</b>               
-            </p>
-            <p>
-                "Sunflower" - песня американских рэперов Post Malone и Swae Lee. По данным на 
-                16 сентебря 2025 года имеет 3.960 миллиардов стримов в Spotify. 
-                Песня была выпущена 18 октября 2018 года в качестве сингла с саундтрека к 
-                анимационному фильму 2018 года "Человек-паук: в мире пауков" и позже была включена 
-                в третий студийный альбом Post Malone "Hollywood's Bleeding" (2019). В 
-                официальном ремиксе приняли участие американские певцы. Ники Джем и принц Ройс.
-            </p>
-        </div>
+        <section>
+            <div class="wrapper">  
+                <div class="images">
+                    <div class="left-box">
+                        <div class="left-box-item">
+                            <img src="img/filki.jpg" alt="">
+                        </div>
+                        <div class="left-box-item">
+                            <img src="img/mt.jpg" alt="">
+                        </div>
+                    </div>          
+                    <div class="right-box">
+                        <div class="right-box-item">
+                            <img src="img/gmcmvp.jpg" alt="">
+                        </div>
+                        <div class="right-box-item-middle">
+                            <img src="img/angelcore.png" alt="">
+                        </div>
+                        <div class="right-box-item">
+                            <img src="img/The_Weeknd_-_Starboy_(single).jpg" alt="">
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        
+        <section>
+            <div class="wrapper">  
+                <div class="content-top-bottom">
+                    <div class="block block-lime">
+                        <div class="block-item">
+                            <img src="img/filki.jpg" alt="">
+                        </div>
+                        <h4>Платина, PLOHOYPAREN - Филки</h4>
+                        <p>Свежий лонч от Платины и Плохого Парня</p>
+                        <a href="#">Подробнее»</a>
+                    </div>
+                      
+                    <div class="center-block center-block-bottom">
+                        <div class="center-block-content">
+                            <h4>Blinding Lights</h4>
+                            <p>
+                                Blinding Lights - песня канадского певца и автора песен The Weeknd с его 
+                                четвертого студийного альбома After Hours (2020). По данным на 16 сентебря 2025 года 
+                                имеет 5.035 миллиардов стримов в Spotify.
+                            </p>
+                            <a href="#" class="btn">Подробнее»</a>
+                        </div>
+                        <div class="center-block-img">
+                            <img src="img/The_Weeknd_-_Blinding_Lights.png" alt="">
+                        </div>
+                    </div>
+                    <div class="block block-white">
+                        <h4>Whole Lotta Swag - Moscow Type</h4>
+                        <p>И снова парень из Тамбова со своим новым EP</p>
+                        <div class="block-item">
+                            <img src="img/mt.jpg" alt="">
+                        </div>
+                        <div class="right-block-more">
+                            <a href="#">Подробнее»</a>
+                        </div>
+                    </div>
+                </div>          
+
+                <div class="content-mid">
+                    <h4>Топ 100 самых прослушиваемых треков на Spotify</h4>
+                    <p>
+                        Вашему вниманию топ 100 треков по прослушиваниям на Spotify.
+                        По информации на 2024 год, Spotify — самый популярный стриминговый 
+                        сервис музыки в мире. Его доля на рынке составляла 31,7%.
+                    </p>
+                    <div class="link">
+                        <a href="#" class="btn">Подробнее»</a>                        
+                    </div>
+                </div>
+
+                <div class="content-top-bottom">
+                    <div class="block block-white">
+                        <div class="block-item">
+                            <img src="img/Sunflower_promo.jpg" alt="">
+                        </div>
+                        <h4>Post Malone and Swae Lee - Sunflower</h4>
+                        <p>"Sunflower" - песня американских рэперов Post Malone и Swae Lee. По данным на 
+                            16 сентебря 2025 года имеет 3.960 миллиардов стримов в Spotify.</p>
+                        <a href="#">Подробнее»</a>
+                    </div>   
+                    <div class="center-block center-block-top">
+                        <div class="center-block-content">
+                            <h4>Sweater Weather</h4>
+                            <p>
+                                Sweater Weather - песня американской альтернативной группы the Neighbourhood.
+                                По состоянию на 5 июля 2025 года песня занимает 6-е место по количеству просмотров на Spotify.
+                            </p>
+                            <a href="#" class="btn">Подробнее»</a>
+                        </div>
+                        <div class="center-block-img">
+                            <img src="img/Sweater_Weather_(The_Neighborhood_single_cover).jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="block block-lime">
+                        <h4>Friengly Thug 52 NGG - GMC MVP</h4>
+                        <p>На 12 октября 2025 года, альбом «Graf Monte-Cristo / Most Valuable Pirate» российского рэп-исполнителя Friendly Thug 52 NGG насчитывает более 54,27 миллиона прослушиваний на музыкальной стриминговой платформе Spotify. 
+
+                        </p>
+                        <div class="block-item">
+                            <img src="img/gmcmvp.jpg" alt="">
+                        </div>
+                        <div class="right-block-more">
+                            <a href="#">Подробнее»</a>
+                        </div>
+                    </div>          
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <hr>
+            <div class="footer-wrapper">
+                <p> Ковалёв И.А. <br> 2025 Б9123-09.03.04</p>
+            </div>
+        </footer>
     </main>
-    <footer>
-        <hr>    
-        <p>Б9123-09.03.04 Ковалёв И.А.</p>
-    </footer>
 </body>
 </html> 

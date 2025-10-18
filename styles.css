@@ -1,0 +1,242 @@
+body {
+    background: rgb(25, 25, 25);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 15px;   
+}
+
+.btn {
+    display: inline-block;
+    padding: 3px 6px;
+    background: white;
+    color: rgb(25, 25, 25);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.75em;
+    text-decoration: none;
+}
+
+/*===== HEADER =====*/
+
+.header-title {
+    background-color: rgb(203, 253, 52);
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.nav-list li {
+    margin-right: 2em ;
+    list-style-type: none;
+    display: inline;
+    color: white;
+}
+
+.nav-item {
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+}
+
+.nav-item-active {
+    color: black;
+    background-color: white;
+}
+
+/*===== MAIN IMAGES =====*/
+
+.images {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 300px;
+}
+
+.left-box {
+    display: block;
+    float: left;
+    width: 65%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.left-box-item {
+    height: 50%;
+    box-sizing: border-box;
+    border: white thin solid;
+}
+
+.left-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-box {
+    display: block;
+    float: right;
+    width: 35%;
+    height: 100%;
+}
+
+.right-box-item {
+    height: 25%;
+    border: white thin solid;
+    box-sizing: border-box;
+}
+
+.right-box-item-middle {
+    height: 50%;
+    border: white thin solid;
+    box-sizing: border-box;
+}
+
+.right-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*===== MAIN CONTENT 1-ый блок =====*/
+
+.content-top-bottom {
+    width: 85%;
+    margin: 0 auto;
+    padding: 25px 0;
+    overflow: auto;
+}
+
+.block {
+    display: inline-block;
+    padding: 25px;
+    border-radius: 10%;
+    width: 30%;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.block-lime {
+    background-color: rgb(203, 253, 52);
+}
+
+.block-white {
+    background-color: white;
+}
+
+.block h4, p {
+    margin: 15px 0;
+}
+
+.block img {
+    margin: 10px auto;
+    width: 75%;
+    border-radius: 10%;
+    display: block;
+}
+
+.block a {
+    text-decoration: underline;
+}
+
+.right-block-more {
+    text-align: end;
+}
+
+.center-block {
+    display: inline-block;
+    padding: 15px;
+    width: 37%;
+    color: white;
+    box-sizing: border-box;
+}
+
+.center-block-top {
+    vertical-align: top;
+}
+
+.center-block-bottom {
+    vertical-align: bottom;
+}
+
+.center-block-content {
+    display: inline-block;
+    width: 60%;
+    text-align: right;
+}
+
+.center-block-content p {
+   font-size: 0.75em;
+    margin: 10px 0;
+}
+
+.center-block-content button {
+    background: rgb(203, 253, 52);
+    border: white thin solid;
+    color: white;
+}
+
+.center-block-img {
+    display: inline-block;
+    width: 35%;
+}
+
+.center-block img {
+    width: 100%;
+    border-radius: 10%;
+    margin: 5px;
+}
+
+/*===== MAIN CONTENT 2-ой блок =====*/
+
+.content-mid {
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+}
+
+.link {
+   text-align: end; 
+}
+
+/*===== FOOTER =====*/
+
+footer {
+    margin: 0 auto;
+}
+
+footer hr {
+    color: white;
+}
+
+footer p {
+    font-size: 0.8em;
+    color: white;
+    text-align: center;
+}
+
+.footer-wrapper {
+    margin: 0 auto;
+    max-width: 300px;
+}
