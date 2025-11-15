@@ -1,0 +1,25 @@
+body {
+    background: rgb(25, 25, 25);
+}
+
+.header-title {
+    background-color: rgb(203, 253, 52);
+    font-size: 2em;
+}
+
+.lime {
+    background-color: rgb(203, 253, 52);
+}
+
+.white {
+    background-color: white;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+
+
+
+

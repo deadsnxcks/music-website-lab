@@ -3,146 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
     <title>MusicLab</title>
 </head>
 <body>
     <header>
-        <div class="header-title">MUSICLAB</div>
-        <section>
-            <nav>
-                <ul class="nav-list">
-                    <li>
-                        <a href="#" class="nav-item nav-item-active">Главная</a>    
+        <div class="header-title p-2 fw-bold">MUSICLAB</div>
+        
+        <nav class="navbar navbar-expand-md navbar-light" >
+
+            <!-- Кнопка для свернутого меню -->
+            <button 
+                class="navbar-toggler bg-light text-white" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#menu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- меню -->
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item p-2">
+                        <a class="nav-link active text-dark bg-light rounded p-2" href="#">Главная</a>
                     </li>
-                    <li>
-                        <a href="#" class="nav-item">Новинки</a>
+                    <li class="nav-item p-2">
+                        <a class="nav-link text-white p-2" href="#">Новинки</a>
                     </li>
-                    <li>
-                        <a href="#" class="nav-item">Тренды</a>
+                    <li class="nav-item p-2">
+                        <a class="nav-link text-white p-2" href="#">Тренды</a>
                     </li>
-                    <li>
-                        <a href="#" class="nav-item">О нас</a>
+                    <li class="nav-item p-2">
+                        <a class="nav-link text-white p-2" href="#">О нас</a>
                     </li>
                 </ul>
-            </nav>
-        </section>
+            </div>
+  
+        </nav>
+        
     </header>
 
+    <div 
+        id="gallery" 
+        class="carousel slide mb-5" 
+        data-bs-ride="carousel"
+    >
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/filki.jpg" class=".img-fluid img-thumbnail d-block mx-auto w-25" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="img/gmcmvp.jpg" class=".img-block img-thumbnail d-block mx-auto w-25" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="img/angelcore.png" class=".img-block img-thumbnail d-block mx-auto w-25" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="img/mt.jpg" class=".img-block img-thumbnail d-block mx-auto w-25" alt="">
+            </div>
+
+        </div>
+
+        <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#gallery"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#gallery"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
+    </div>
+
     <main>
-        <section>
-            <div class="images">
-                <div class="left-box">
-                    <div class="left-box-item">
-                        <img src="img/filki.jpg" alt="">
+        <div class="container d-flex flex-column gap-3">
+            <div class="row justify-content-center gap-3">
+                <div class="col-12 col-md-3 rounded-5 lime d-flex flex-column justify-content-center text-center p-3">
+                    <div class="d-flex justify-content-center"> <!-- Добавленный контейнер -->
+                        <img src="img/filki.jpg" class="img-fluid w-75 mb-2 rounded-4" alt="">
                     </div>
-                    <div class="left-box-item">
-                        <img src="img/mt.jpg" alt="">
-                    </div>
-                </div>          
-                <div class="right-box">
-                       <div class="right-box-item">
-                           <img src="img/gmcmvp.jpg" alt="">
-                       </div>
-                       <div class="right-box-item-middle">
-                           <img src="img/angelcore.png" alt="">
-                    </div>
-                    <div class="right-box-item">
-                        <img src="img/The_Weeknd_-_Starboy_(single).jpg" alt="">
-                    </div>
-                </div>
-            </div> 
-        </section>
-        
-        <section> 
-            <div class="content-top-bottom">
-                <div class="block block-lime">
-                    <div class="block-item">
-                           <img src="img/filki.jpg" alt="">
-                    </div>
-                    <h4>Платина, PLOHOYPAREN - Филки</h4>
+                    <h5>Платина, PLOHOYPAREN - Филки</h5>
                     <p>Свежий лонч от Платины и Плохого Парня</p>
-                    <a href="#">Подробнее»</a>
+                    <a href="#" class="text-start">Подробнее»</a>
                 </div>
-                      
-                <div class="center-block center-block-bottom">
-                    <div class="center-block-content">
-                        <h4>Blinding Lights</h4>
+                <div class="col-12 col-md-5 d-flex align-items-end">
+                    <div class="d-flex flex-row">
+                        <div class="d-flex flex-column text-end text-white w-75">
+                        <h5>Blinding Lights</h5>
                         <p>
                             Blinding Lights - песня канадского певца и автора песен The Weeknd с его 
                             четвертого студийного альбома After Hours (2020). По данным на 16 сентебря 2025 года 
                             имеет 5.035 миллиардов стримов в Spotify.
                         </p>
-                        <a href="#" class="btn">Подробнее»</a>
+                        <button type="button" class="btn btn-light align-self-end">Подробнее»</button>
+                        </div>
+                        <div class="d-flex justify-content-center align-self-center w-25"> <!-- Добавленный контейнер -->
+                            <img src="img/The_Weeknd_-_Blinding_Lights.png" class="img-fluid w-75 mb-2 rounded-4" alt="">
+                        </div>
                     </div>
-                    <div class="center-block-img">
-                        <img src="img/The_Weeknd_-_Blinding_Lights.png" alt="">
-                    </div>
+                    
                 </div>
-                <div class="block block-white">
-                    <h4>Whole Lotta Swag - Moscow Type</h4>
+                <div class="col-12 col-md-3 rounded-5 white d-flex flex-column justify-content-center text-center p-3">
+                    <h5>Whole Lotta Swag - Moscow Type</h5>
                     <p>И снова парень из Тамбова со своим новым EP</p>
-                    <div class="block-item">
-                        <img src="img/mt.jpg" alt="">
+                    <div class="d-flex justify-content-center"> <!-- Добавленный контейнер -->
+                        <img src="img/mt.jpg" class="img-fluid w-75 mb-2 rounded-4" alt="">
                     </div>
-                    <div class="right-block-more">
-                        <a href="#">Подробнее»</a>
-                    </div>
-                </div>
-            </div>          
-
-            <div class="content-mid">
-                <h4>Топ 100 самых прослушиваемых треков на Spotify</h4>
-                <p>
-                    Вашему вниманию топ 100 треков по прослушиваниям на Spotify.
-                    По информации на 2024 год, Spotify — самый популярный стриминговый 
-                    сервис музыки в мире. Его доля на рынке составляла 31,7%.
-                </p>
-                <div class="link">
-                    <a href="#" class="btn">Подробнее»</a>                        
+                    <a href="#" class="text-end">Подробнее»</a>
                 </div>
             </div>
 
-            <div class="content-top-bottom">
-                <div class="block block-white">
-                    <div class="block-item">
-                        <img src="img/Sunflower_promo.jpg" alt="">
+            <div class="row d-flex justify-content-center gap-3">
+                <div class="col-12 col-md-7 d-flex flex-column text-white">
+                    <h4>Топ 100 самых прослушиваемых треков на Spotify</h4>
+                    <p class="text-justify">
+                        Вашему вниманию топ 100 треков по прослушиваниям на Spotify.
+                        По информации на 2024 год, Spotify — самый популярный стриминговый 
+                        сервис музыки в мире. Его доля на рынке составляла 31,7%.
+                    </p> 
+                    <button type="button" class="btn btn-light align-self-end">Подробнее»</button>   
+                </div>
+            </div>
+
+            <div class="row justify-content-center gap-3">
+                <div class="col-12 col-md-3 rounded-5 white d-flex flex-column justify-content-center text-center p-3">
+                    <div class="d-flex justify-content-center"> <!-- Добавленный контейнер -->
+                        <img src="img/Sunflower_promo.jpg" class="img-fluid w-75 mb-2 rounded-4" alt="">
                     </div>
-                    <h4>Post Malone and Swae Lee - Sunflower</h4>
+                    <h5>Post Malone and Swae Lee - Sunflower</h5>
                     <p>"Sunflower" - песня американских рэперов Post Malone и Swae Lee. По данным на 
                         16 сентебря 2025 года имеет 3.960 миллиардов стримов в Spotify.</p>
-                    <a href="#">Подробнее»</a>
-                </div>   
-                <div class="center-block center-block-top">
-                    <div class="center-block-img">
-                        <img src="img/Sweater_Weather_(The_Neighborhood_single_cover).jpg" alt="">
-                    </div>
-                    <div class="center-block-content center-block-content-left">
-                        <h4>Sweater Weather</h4>
-                        <p>
-                            Sweater Weather - песня американской альтернативной группы the Neighbourhood.
-                            По состоянию на 5 июля 2025 года песня занимает 6-е место по количеству просмотров на Spotify.
-                        </p>
-                        <a href="#" class="btn">Подробнее»</a>
-                    </div>
+                    <a href="#" class="text-start">Подробнее»</a>
                 </div>
-                <div class="block block-lime">
-                    <h4>Friengly Thug 52 NGG - GMC MVP</h4>
-                    <p>На 12 октября 2025 года, альбом «Graf Monte-Cristo / Most Valuable Pirate» российского рэп-исполнителя Friendly Thug 52 NGG насчитывает более 54,27 миллиона прослушиваний на музыкальной стриминговой платформе Spotify. 
+                <div class="col-12 col-md-5 d-flex align-items-start">
+                    <div class="d-flex flex-row">
+                        <div class="d-flex justify-content-center align-self-center w-25"> <!-- Добавленный контейнер -->
+                            <img src="img/Sweater_Weather_(The_Neighborhood_single_cover).jpg" class="img-fluid w-75 mb-2 rounded-4" alt="">
+                        </div>
+                        <div class="d-flex flex-column text-start text-white w-75">
+                            <h5>Sweater Weather</h5>
+                            <p>
+                                Sweater Weather - песня американской альтернативной группы the Neighbourhood.
+                                По состоянию на 5 июля 2025 года песня занимает 6-е место по количеству просмотров на Spotify.
+                            </p>
+                            <button type="button" class="btn btn-light align-self-start">Подробнее»</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-12 col-md-3 rounded-5 lime d-flex flex-column justify-content-center text-center p-3">
+                    <h5>Friengly Thug 52 NGG - GMC MVP</h5>
+                    <p> На 12 октября 2025 года, альбом «Graf Monte-Cristo / Most Valuable Pirate» российского 
+                        рэп-исполнителя Friendly Thug 52 NGG насчитывает более 54,27 миллиона прослушиваний на музыкальной стриминговой платформе Spotify.
                     </p>
-                    <div class="block-item">
-                        <img src="img/gmcmvp.jpg" alt="">
+                    <div class="d-flex justify-content-center"> <!-- Добавленный контейнер -->
+                        <img src="img/gmcmvp.jpg" class="img-fluid w-75 mb-2 rounded-4" alt="">
                     </div>
-                    <div class="right-block-more">
-                        <a href="#">Подробнее»</a>
-                    </div>
-                </div>          
+                    <a href="#" class="text-end">Подробнее»</a>
+                </div>
             </div>
-        </section>
+        </div>
 
-        <footer>
-            <hr>
-            <div class="footer-wrapper">
+        <hr class="text-white">
+
+        <footer class="container text-white">
+            <div class="row d-flex text-center">
                 <p> Ковалёв И.А. <br> 2025 Б9123-09.03.04</p>
             </div>
         </footer>
