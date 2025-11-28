@@ -1,0 +1,21 @@
+mixin createMenu(menu, active)
+    each value, key in menu
+        if active == key
+            a.active(href= value)= key
+        else
+            a(href= value)= key
+
+mixin createGallery(images)
+  .gallery
+    .gallery__left
+      each img, index in images.slice(0, 2)
+        .gallery__left--img
+          a(href="#")
+            img(src=require(`../images/${img}`))
+    
+    .gallery__right
+      each img, index in images.slice(2)
+        - const className = index === 1 ? 'gallery__right--img--middle' : 'gallery__right--img'
+        div(class=className)
+          a(href="#")
+            img(src=require(`../images/${img}`))

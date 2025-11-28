@@ -7,11 +7,15 @@ html(lang="ru")
         title #{title} 
     body
         block header
-            h2= title
+            header
+                h1= title
 
-        block nav
+        div.container
+            block nav
 
-        block content
+            block gallery
+
+            block content
             
         block footer
             footer

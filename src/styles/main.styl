@@ -1,0 +1,117 @@
+back(size)
+  background-color #f1f1f1
+  box-shadow 4px 5px 10px rgba(0, 0, 0, 0.4)
+  padding: size + "%"
+  margin 0 0 1% 0
+
+colorTextBlack = rgb(25, 25, 25)
+colorTextWhite = #ffff
+
+colorBlack  = rgb(25, 25, 25)
+colorLime   = rgb(203, 253, 52)
+colorWhite  = #ffff
+
+html
+  color colorTextBlack
+
+header
+    background-color colorLime
+    & h1
+        font-weight bold
+        margin 0
+        padding 20px 
+
+body 
+    background-color colorBlack
+    margin 0
+
+div.container
+    margin: 0 auto;
+    padding: 0 20px;
+
+nav
+  padding 20px 0
+  & a
+    display inline-block
+    padding 1%
+    color colorTextWhite
+    text-decoration: none
+    border-top-right-radius 25%;
+    border-bottom-left-radius 25%;
+    margin-right 15px
+        
+    &:hover
+    &.active
+      background-color colorWhite
+      color colorTextBlack
+
+div.gallery
+    display flex
+    width 90%
+    margin 0 auto
+    height 300px
+
+div.gallery__left 
+    width: 65%;
+    height: 100%;
+
+div.gallery__left--img
+    height 50%
+    border: white thin solid
+    box-sizing: border-box
+    overflow hidden
+
+    & a 
+        display block
+        height 100%
+
+    & img 
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease
+    
+    & img:hover 
+        transform scale(1.05)
+
+div.gallery__right
+    width: 35%;
+    height: 100%;
+
+div.gallery__right--img
+    height: 25%
+    border: white thin solid
+    box-sizing: border-box
+    overflow hidden
+
+    & a 
+        display block
+        height 100%
+    
+    & img 
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease
+
+    & img:hover 
+        transform scale(1.05)
+
+div.gallery__right--img--middle
+    height: 50%;
+    border: white thin solid
+    box-sizing: border-box
+    overflow hidden
+
+    & a 
+        display block
+        height 100%
+
+    & img 
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease
+    
+    & img:hover 
+        transform scale(1.05)
