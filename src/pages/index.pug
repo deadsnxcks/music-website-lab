@@ -5,4 +5,59 @@ block nav
     +createMenu(dictMenu, 'Главная')
 
 block gallery 
-  +createGallery(listImages)
+  +createGallery(listImagesLinks)
+
+block content 
+  section 
+    div.card.lime 
+      div.card__img 
+        img(src=require("../images/filki.jpg"))
+      h4="Платина, PLOHOYPAREN - Филки"
+      p="Свежий лонч от Платины и Плохого Парня"
+      a(href="#")="Подробнее»"
+
+    div.block.bottom
+      div.block__content.rtext
+        h4="Blinding Lights"
+        p=`Blinding Lights - песня канадского певца и автора песен The Weeknd с его четвертого студийного альбома After Hours (2020). По данным на 16 сентебря 2025 года имеет 5.035 миллиардов стримов в Spotify.`
+        a(href="#")="Подробнее»"
+      div.block__img.pl 
+        img(src=require("../images/The_Weeknd_-_Blinding_Lights.png"))
+        
+    div.card.white 
+      h4="Whole Lotta Swag - Moscow Type"
+      p="И снова парень из Тамбова со своим новым EP"
+      div.card__img 
+        img(src=require("../images/mt.jpg"))
+      a(href="#")="Подробнее»"
+
+  section
+    div.contmid
+      h4="Топ 100 самых прослушиваемых треков на Spotify"
+      p="Вашему вниманию топ 100 треков по прослушиваниям на Spotify. По информации на 2024 год, Spotify — самый популярный стриминговый сервис музыки в мире. Его доля на рынке составляла 31,7%."
+      div.contmid__link
+        a(href="#")="Подробнее»" 
+
+  section 
+    div.card.white 
+      div.card__img 
+        img(src=require("../images/Sunflower_promo.jpg"))
+      h4="Post Malone and Swae Lee - Sunflower"
+      p="По данным на 16 сентебря 2025 года имеет 3.960 миллиардов стримов в Spotify."
+      a(href="#")="Подробнее»"
+
+    div.block.top 
+      div.block__img.pr 
+        img(src=require("../images/Sweater_Weather_(The_Neighborhood_single_cover).jpg"))
+      div.block__content.ltext
+        h4="Blinding Lights"
+        p=`Blinding Lights - песня канадского певца и автора песен The Weeknd с его четвертого студийного альбома After Hours (2020). По данным на 16 сентебря 2025 года имеет 5.035 миллиардов стримов в Spotify.`
+        a(href="#")="Подробнее»"
+      
+        
+    div.card.lime 
+      h4="Friengly Thug 52 NGG - GMC MVP"
+      p="На 12 октября 2025 года, альбом «GMC MVP» рэп-исполнителя Friendly Thug 52 NGG насчитывает более 54,27 миллиона стримов в Spotify."
+      div.card__img 
+        img(src=require("../images/gmcmvp.jpg"))
+      a(href="#")="Подробнее»"

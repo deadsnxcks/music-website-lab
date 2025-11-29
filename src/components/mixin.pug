@@ -8,14 +8,17 @@ mixin createMenu(menu, active)
 mixin createGallery(images)
   .gallery
     .gallery__left
-      each img, index in images.slice(0, 2)
-        .gallery__left--img
-          a(href="#")
-            img(src=require(`../images/${img}`))
+      each href, img in images
+        if Object.keys(images).indexOf(img) < 2
+          .gallery__left--img
+            a(href=href)
+              img(src=require(`../images/${img}`))
     
     .gallery__right
-      each img, index in images.slice(2)
-        - const className = index === 1 ? 'gallery__right--img--middle' : 'gallery__right--img'
-        div(class=className)
-          a(href="#")
-            img(src=require(`../images/${img}`))
+      each href, img in images
+        if Object.keys(images).indexOf(img) >= 2
+          - const index = Object.keys(images).indexOf(img) - 2
+          - const className = index === 1 ? 'gallery__right--img--middle' : 'gallery__right--img'
+          div(class=className)
+            a(href=href)
+              img(src=require(`../images/${img}`))

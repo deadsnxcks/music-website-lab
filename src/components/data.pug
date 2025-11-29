@@ -2,36 +2,79 @@ block variables
 - var title = 'MUSICLAB'
     -
         var dictMenu = {'Главная': 'index.html', 
+                'GMCMVP' : "gmcmvp.html",
                 'Тренды' : "#",  
                 'Новинки': "#", 
                 'О нас': "#"
         }
         
-    - var listImages = ['img1.jpg', 'img1.jpg', 'img1.jpg', 'img1.jpg', 'img1.jpg']
+    -   var listImagesLinks = {'filki.jpg' : 'gmcmvp.html', 'mt.jpg' : 'gmcmvp.html', 'angelcore.png' : 'gmcmvp.html', 'gmcmvp.jpg' : 'gmcmvp.html', 'The_Weeknd_-_Blinding_Lights.png' : 'gmcmvp.html'}
 
-    - 
-        var listSections = [
-            {'header' : 'Бурдж-Халифа в Дубае, ОАЭ',
-            'image' : 'image7.jpg', 
-            'text' : 'Небоскрёб высотой 828 метров, самое высокое сооружение в мире. Форма здания напоминает сталагмит.'
+    -   var listImages = ['filki.jpg', 'mt.jpg', 'angelcore.png', 'gmcmvp.jpg', 'The_Weeknd_-_Blinding_Lights.png']
+
+    -
+        const cardsData = [
+            {
+                type: 'lime',
+                image: require("../images/img1.jpg"),
+                title: 'Платина, PLOHOYPAREN - Филки',
+                description: 'Свежий лонч от Платины и Плохого Парня',
+                link: '#',
+                imagePosition: 'top'
             },
-            {'header' : 'Токийское небесное дерево, Япония',
-            'image' : 'image6.jpg', 
-            'text' : 'Телевизионная башня в районе Сумида самая высокая среди телебашен мира. Высота телебашни вместе с антенной составляет 634 метра.'
+            {
+                type: 'white',
+                image: require("../images/img1.jpg"),
+                title: 'Whole Lotta Swag - Moscow Type',
+                description: 'И снова парень из Тамбова со своим новым EP',
+                link: '#',
+                imagePosition: 'bottom'
             },
-            {'header' : 'CN Tower, Канада',
-            'image' : 'image8.jpg', 
-            'text' : 'Си-Эн Тауэр  — самое высокое свободно стоящее сооружение в мире с 1976 по 2007 год. Его высота составляет 553,33 метра.'
+            {
+                type: 'white',
+                image: require("../images/img1.jpg"),
+                title: 'Post Malone and Swae Lee - Sunflower',
+                description: 'По данным на 16 сентября 2025 года имеет 3.960 миллиардов стримов в Spotify.',
+                link: '#',
+                imagePosition: 'top'
+            },
+            {
+                type: 'lime',
+                image: require("../images/img1.jpg"),
+                title: 'Friengly Thug 52 NGG - GMC MVP',
+                description: 'На 12 октября 2025 года, альбом «GMC MVP» рэп-исполнителя Friendly Thug 52 NGG насчитывает более 54,27 миллиона стримов в Spotify.',
+                link: '#',
+                imagePosition: 'bottom'
             }
         ]
 
--
-    var structures = [
-        {
-            menuItem: "Ворота Запада, США",
-            pict: "image1_big.jpg",
-            firstP: `Арка в Сент-Луисе, также известная под именем «Врата на запад» — мемориал, являющийся частью Джефферсоновского национального экспансиального мемориала, а также визитной карточкой Сент-Луиса, штат Миссури, США.`,
-            secondP: `Арка была спроектирована финско-американским архитектором Ээро Саариненом в 1947 году. Её высота 192 метра в самой высокой точке, ширина её основания также 192 метра. Таким образом арка является самым высоким памятником на территории США. Её строительство началось 12 февраля 1963 года и было закончено 28 октября 1965 года. Памятник открылся для посетителей 24 июля 1967 года.`
+    -
+        const blocksData = [
+            {
+                type: 'bottom',
+                image: require("../images/img1.jpg"),
+                title: 'Blinding Lights',
+                description: 'Blinding Lights - песня канадского певца и автора песен The Weeknd с его четвертого студийного альбома After Hours (2020). По данным на 16 сентября 2025 года имеет 5.035 миллиардов стримов в Spotify.',
+                link: '#',
+                textPosition: 'rtext',
+                imagePosition: 'pl'
+            },
+            {
+                type: 'top',
+                image: require("../images/img1.jpg"),
+                title: 'Blinding Lights',
+                description: 'Blinding Lights - песня канадского певца и автора песен The Weeknd с его четвертого студийного альбома After Hours (2020). По данных на 16 сентября 2025 года имеет 5.035 миллиардов стримов в Spotify.',
+                link: '#',
+                textPosition: 'ltext',
+                imagePosition: 'pr'
+            }
+        ]
+
+    -
+        const contmidData = {
+            title: 'Топ 100 самых прослушиваемых треков на Spotify',
+            description: 'Вашему вниманию топ 100 треков по прослушиваниям на Spotify. По информации на 2024 год, Spotify — самый популярный стриминговый сервис музыки в мире. Его доля на рынке составляла 31,7%.',
+            link: '#',
+            linkText: 'Подробнее»'
         }
-    ]
     
